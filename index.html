@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- (a) Title about my college -->
+<title>Sunrise College of Arts &amp; Science – Welcome</title>
+<style>
+/* (b) Background image.
+   A campus picture is built in below so the page works on its own.
+   To use your own photo, replace the url(...) with url("college.jpg"). */
+body{
+  margin:0;min-height:100vh;display:flex;flex-direction:column;
+  font-family:Georgia,serif;color:#fff;
+  background-color:#bfe3f5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800' preserveAspectRatio='xMidYMid slice'%3E%3Crect width='1200' height='800' fill='%23bfe3f5'/%3E%3Ccircle cx='1000' cy='140' r='70' fill='%23ffe08a'/%3E%3Cellipse cx='250' cy='160' rx='110' ry='32' fill='%23fff'/%3E%3Cellipse cx='340' cy='140' rx='70' ry='28' fill='%23fff'/%3E%3Crect y='620' width='1200' height='180' fill='%2368a35a'/%3E%3Crect x='300' y='400' width='600' height='230' fill='%23b5543c'/%3E%3Cpolygon points='280,400 600,290 920,400' fill='%238a3b2a'/%3E%3Crect x='560' y='480' width='80' height='150' fill='%235a2a1f'/%3E%3Crect x='340' y='450' width='60' height='70' fill='%23fff3c4'/%3E%3Crect x='440' y='450' width='60' height='70' fill='%23fff3c4'/%3E%3Crect x='700' y='450' width='60' height='70' fill='%23fff3c4'/%3E%3Crect x='800' y='450' width='60' height='70' fill='%23fff3c4'/%3E%3Crect x='340' y='550' width='60' height='70' fill='%23fff3c4'/%3E%3Crect x='440' y='550' width='60' height='70' fill='%23fff3c4'/%3E%3Crect x='700' y='550' width='60' height='70' fill='%23fff3c4'/%3E%3Crect x='800' y='550' width='60' height='70' fill='%23fff3c4'/%3E%3Crect x='592' y='230' width='16' height='60' fill='%23555'/%3E%3Cpolygon points='608,232 650,246 608,260' fill='%23e53935'/%3E%3Crect x='110' y='560' width='24' height='80' fill='%236b4423'/%3E%3Ccircle cx='122' cy='530' r='65' fill='%232f7d32'/%3E%3Crect x='1050' y='560' width='24' height='80' fill='%236b4423'/%3E%3Ccircle cx='1062' cy='530' r='65' fill='%232f7d32'/%3E%3C/svg%3E");
+  background-size:cover;background-position:center;background-attachment:fixed;
+}
+header,section{width:100%;max-width:860px;margin:0 auto}
+.panel{background:rgba(0,0,0,.62);border-radius:14px;padding:20px 24px;margin:24px 16px 0}
+header{text-align:center}
+
+/* (c) College name large, address smaller */
+h1{font-size:clamp(2rem,6vw,3.6rem);margin:0 0 8px;letter-spacing:.02em}
+address{font-style:normal;font-size:1.05rem;color:#e6e6e6}
+
+h2{margin:0 0 14px;font-size:1.4rem;text-align:center}
+
+/* (d) Each course: different colour, style and typeface */
+ul.courses{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;text-align:center}
+.courses li{font-size:1.3rem}
+.c1{color:#ff6b6b;font-family:Georgia,serif;font-weight:bold}
+.c2{color:#4dd0e1;font-family:"Courier New",monospace;font-style:italic}
+.c3{color:#ffd54f;font-family:"Trebuchet MS",sans-serif;text-transform:uppercase;letter-spacing:.12em}
+.c4{color:#81c784;font-family:"Brush Script MT","Segoe Script",cursive;font-size:1.6rem!important}
+.c5{color:#ce93d8;font-family:Impact,"Arial Black",sans-serif;text-decoration:underline}
+.c6{color:#ffab91;font-family:"Times New Roman",serif;font-variant:small-caps;font-weight:bold;font-style:italic}
+
+/* (e) Scrolling announcement bar */
+.ticker{margin-top:auto;background:#c62828;overflow:hidden;white-space:nowrap;padding:10px 0;font-family:system-ui,sans-serif;font-weight:600}
+.ticker span{display:inline-block;padding-left:100%;animation:scroll 28s linear infinite}
+.ticker:hover span{animation-play-state:paused}
+@keyframes scroll{to{transform:translateX(-100%)}}
+@media (prefers-reduced-motion:reduce){.ticker span{animation:none;padding-left:16px}.ticker{overflow-x:auto}}
+main{padding-bottom:24px}
+</style>
+</head>
+<body>
+<main>
+  <header class="panel">
+    <h1>Sunrise College of Arts &amp; Science</h1>
+    <address>123 College Road, Your Town, Your State – 000000</address>
+  </header>
+
+  <section class="panel">
+    <h2>Courses Offered</h2>
+    <ul class="courses">
+      <li class="c1">B.Sc. Computer Science</li>
+      <li class="c2">B.Com. Commerce</li>
+      <li class="c3">B.A. English</li>
+      <li class="c4">B.Sc. Mathematics</li>
+      <li class="c5">B.Sc. Physics</li>
+      <li class="c6">B.B.A. Management</li>
+    </ul>
+  </section>
+</main>
+
+<div class="ticker" role="marquee" aria-label="College announcements">
+  <span>📢 Semester exams begin 10 November &nbsp;|&nbsp; 🎓 Annual Day on 15 December &nbsp;|&nbsp; 📝 Last date for exam fee payment: 25 October &nbsp;|&nbsp; 🏆 Sports Meet registrations open now</span>
+</div>
+</body>
+</html>
